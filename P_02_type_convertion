@@ -6,3 +6,51 @@ int main()
   unsigned int m_uint = m_int;
   return 0; 
 }
+
+int main() 
+{ 
+  unsigned short int n_uint = 6000;
+  short int n_int = n_uint;
+  unsigned short int m_uint = n_int*10;
+  short int m_int = m_uint;
+  return 0; 
+}
+
+int main() 
+{ 
+  int n_int = 60000;
+  long n_long = n_int;
+  short n_short = n_int;
+  bool n_bool = n_int;
+  return 0; 
+}
+
+int main() 
+{ 
+  double x_double = 1.2E50;
+  float x_float = x_double;
+  long double x_long = x_double;
+  float y_float = 1.2E25;
+  double y_double = y_float;
+  double z_double = 0.123456789;
+  float z_float = z_double;
+  cout << "x_float = " <<  x_float << endl;
+  cout << "x_double = " << x_double << endl;
+  cout << "x_long = " << x_long << endl;
+  cout << "y_float = " <<  y_float << endl;
+  cout << "y_double = " << y_double << endl;
+  cout.precision(12);
+  cout << "z_float = " <<  z_float << endl;
+  cout.precision(12);
+  cout << "z_double = " << z_double << endl;
+  return 0; 
+}
+
+int main() 
+{ 
+  double x_double = -117.734;
+  int x_int = x_double;
+  char x_char = x_double;
+  bool x_bool = x_double;
+  return 0; 
+}
