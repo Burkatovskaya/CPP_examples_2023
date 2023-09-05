@@ -1,0 +1,11 @@
+int main() 
+{ 
+  double x = -117.734;
+  int n1 = 9, m = 3;
+  n1 += m*n1++;
+  int n2 = 9;
+  n2 += m*++n2;
+  double y = x*m;
+  int k = x*m;
+  return 0; 
+}
