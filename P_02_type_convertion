@@ -1,0 +1,8 @@
+int main() 
+{ 
+  int n_int = 25;
+  unsigned int n_uint = n_int;
+  int m_int = -25;
+  unsigned int m_uint = m_int;
+  return 0; 
+}
