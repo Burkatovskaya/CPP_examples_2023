@@ -50,3 +50,119 @@ int main() {
     return 0;
 }
 
+int main() {
+    int k, n, sum;
+    cout << "Print a positive integer: ";
+    cin >> n;
+    k = 1;
+    sum = 0;
+    for( ; k <= n; )
+    {
+        sum += k;
+        k++;
+    }
+    cout << "The sum of integers from 1 to " << n << " is " << sum << endl;
+    return 0;
+}
+
+int main() {
+    int k, n, sum;
+    cout << "Print a positive integer: ";
+    cin >> n;
+    sum = 0;
+    for(k = 1; k <= n; k++);
+        sum += k;
+    cout << "The sum of integers from 1 to " << n << " is " << sum << endl;
+    return 0;
+}
+
+
+int main() {
+    int k, n, sum;
+    cout << "Print a positive integer: ";
+    cin >> n;
+    sum = 0;
+    k = 1;
+    while(k <= n)
+        sum += k;
+    cout << "The sum of integers from 1 to " << n << " is " << sum << endl;
+    return 0;
+}
+
+int main() {
+    int n = 5;
+    for(int i = 1; i < n; i++)
+    {
+        for(int j = 0; j < i; j++) 
+        {
+            cout << i << " + " << j << " = " << i + j << "; ";
+            if (i + j > 3)
+                break;
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+int main() {
+    int n = 5;
+    for(int i = 1; i < n; i++)
+    {
+        for(int j = 0; j < i; j++) 
+        {
+            cout << i << " + " << j << " = " << i + j << "; ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+
+int main() {
+    int x, sum = 0;
+    cout << "Print some positive numbers; the last one is 0: ";
+    do
+    {
+        cin >> x;
+        if (x < 0)
+        {
+            cout << x << " is a negative number" << endl;
+            break;
+        }
+        sum += x;
+    }
+    while (x != 0);
+    cout << "The sum of your numbers is " << sum << endl;
+    return 0;
+}
+
+int main() {
+    int x, sum = 0;
+    cout << "Print some positive numbers; the last one is 0: ";
+    do
+    {
+        cin >> x;
+        if (x < 0)
+        {
+            cout << endl << x << " is a negative number" << endl;
+            continue;
+        }
+        sum += x;
+    }
+    while (x != 0);
+    cout << endl << "The sum of your numbers is " << sum << endl;
+    return 0;
+}
+
+int main() {
+    int x, sum = 0;
+    cout << "Print some numbers; the last one is 0: ";
+    while(true)
+    {
+        cin >> x;
+        if (!x)
+            break;
+        sum += x;
+    }
+    cout << endl << "The sum of your numbers is " << sum << endl;
+    return 0;
+}
