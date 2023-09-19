@@ -1,0 +1,123 @@
+int main() {
+  int x = 13, y = 12;
+  if (x < y)
+  {
+    int z = x;
+    x = y;
+    y = z;
+  }
+  return 0;
+}
+
+int main() {
+    double coffee_price, my_money;
+    coffee_price = 190;
+    cout << "How much do you have?" << endl;
+    cin >> my_money;
+    if (my_money >= coffee_price)
+        cout << "Enjoy your coffee!" << endl;
+    else
+        cout << "Oops! Not today." << endl;
+    return 0;
+}
+
+int main() {
+    int percentage;
+    char grade;
+    cout << "Your percentage?" << endl;
+    cin >> percentage;
+    if (percentage >= 75)
+        if (percentage >= 91)
+            cout << "Your grade is A! Excellent." << endl;
+        else
+            cout << "Your grade is B! Good." << endl;
+    else
+        if (percentage >= 50)
+            if (percentage >= 60)
+                cout << "Your grade is C! Not bad." << endl;
+            else
+                cout << "Your grade is D! More or less." << endl;
+        else
+            cout << "Your grade is F! Try again." << endl;
+    return 0;
+}
+
+int main() {
+    int percentage;
+    char grade;
+    cout << "Your percentage?" << endl;
+    cin >> percentage;
+    if (percentage >= 91)
+        cout << "Your grade is A! Excellent." << endl;
+    else if (percentage >= 74)
+        cout << "Your grade is B! Good." << endl;
+    else if (percentage >= 60)
+        cout << "Your grade is C! Not bad." << endl;
+    else if (percentage >= 50)
+        cout << "Your grade is D! More or less." << endl;
+    else
+        cout << "Your grade is F! Try again." << endl;
+    return 0;
+}
+
+int main() {
+    int x, y, action;
+    cout << "Numbers: ";
+    cin >> x >> y;
+    cout << "Action: 1 - add, 2 - subtract, 3 - multiply, 4 - divide" << endl;
+    cin >> action;
+    switch (action)
+    {
+        case 1:
+        {
+            cout << "x + y = " << x + y << endl;
+            break;
+        }
+        case 2:
+        {
+            cout << "x - y = " << x - y << endl;
+            break;
+        }
+        case 3:
+        {
+            cout << "x * y = " << x * y << endl;
+            break;
+        }
+        case 4:
+        {
+            cout << "x / y = " << x / y << endl;
+            break;
+        }
+        default:
+        {
+            cout << "The action is undefined" << endl;
+            break;
+        }
+    }
+    return 0;
+}
+
+int main() {
+    int x, y, action;
+    cout << "Numbers: ";
+    cin >> x >> y;
+    cout << "Action: 1 - add, 2 - subtract" << endl;
+    cin >> action;
+    switch (action)
+    {
+        case 1:
+        {
+            cout << "x + y = " << x + y << endl;
+        }
+        case 2:
+        {
+            cout << "x - y = " << x - y << endl;
+        }
+        default:
+        {
+            cout << "The action is undefined" << endl;
+        }
+    }
+    return 0;
+}
+
