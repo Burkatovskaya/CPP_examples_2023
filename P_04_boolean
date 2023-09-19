@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+   double x = 68.73;
+   int n = 68;
+   char c = 'D';
+   cout << "x < n is " << (x < n) << endl;  
+   cout << "с < n is " << (c < n) << endl;  
+   cout << "с == n is " << (c == n) << endl;  
+   cout << "с <= x is " << (c <= x) << endl;  
+   return 0;
+}
+
+int main() {
+   double x = 68.73;
+   int n = 68;
+   char c = 'D';
+   cout << "(x < n) && n is " << ((x < n) && n) << endl;  
+   cout << "(с < n) || n is " << ((c < n) || n) << endl;  
+   cout << "(с < n) || (c <= x) is " << ((c < n) || (c <= x)) << endl;  
+   cout << "x == 0 is " << (x == 0) << endl;  
+   cout << "(c < n) || x is " << ((c < n) || x) << endl;  
+   return 0;
+}
+
+int main() {
+   double x = 68.73;
+   int n = 68;
+   char c = 'D';
+   cout << "(x < n) && n is " << ((x < n) && n) << endl;  
+   cout << "(с < n) || n is " << ((c < n) || n) << endl;  
+   cout << "(с < n) || (c <= x) is " << ((c < n) || (c <= x)) << endl;  
+   cout << "x == 0 is " << (x == 0) << endl;  
+   cout << "(c < n) || x is " << ((c < n) || x) << endl;  
+   return 0;
+}
+
+int main() {
+  int a = 13, b = 15, c = -19;
+  a = b = c = 100;
+  return 0;
+}
+
+int main() {
+   int n = 10, m = 10, k = 10;
+   n = ++n + ++n;
+   m = m++ + ++m;
+   k = k++ + k++;
+   return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+   int n = 10, m = -5;
+   bool b1, b2, b3, b4, b5, b6;
+   b1 = ! n == -10 && m == -5;
+   b2 = ! (n == -10) && m == -5;
+   b3 = ! (n == -10 && m == -5);
+   b4 = n == -10 && m == -5;
+   b5 = ! (n == -10) && m == 5;
+   b6 = ! (n == -10 && m == 5);
+   }
+
+#include <iostream>
+using namespace std;
+int main() {
+   bool t = true, f = false;
+   bool b1, b2, b3, b4, b5, b6;
+   b1 = t || t && f;
+   b2 = (t || t) && f;
+   b3 = t || (t && f);
+   b4 = ! f && f;
+   b5 = (! f) && f;
+   b6 = ! (f && f);
+   return 0;
+}
+
+
+
