@@ -1,0 +1,52 @@
+int main() {
+    int x, sum = 0;
+    cout << "Print some numbers; the last one is 0: ";
+    cin >> x;
+    while (x != 0)
+    {
+        sum += x;
+        cin >> x;
+    }
+    cout << "The sum of your numbers is " << sum << endl;
+    return 0;
+}
+
+int main() {
+    int x, sum = 0;
+    cout << "Print some numbers; the last one is 0: ";
+    do
+    {
+        cin >> x;
+        sum += x;
+    }
+    while (x != 0);
+    cout << "The sum of your numbers is " << sum << endl;
+    return 0;
+}
+
+int main() {
+    int x, product = 1;
+    cout << "Print some numbers; the last one is 0: ";
+    do
+    {
+        cin >> x;
+        product *= x;
+    }
+    while (x != 0);
+    cout << "The product of your numbers is " << product << endl;
+    return 0;
+}
+
+int main() {
+    int x, product = 1;
+    cout << "Print some numbers; the last one is 0: ";
+    cin >> x;
+    while (x != 0)
+    {
+        product *= x;
+        cin >> x;
+    }
+    cout << "The product of your numbers is " << product << endl;
+    return 0;
+}
+
