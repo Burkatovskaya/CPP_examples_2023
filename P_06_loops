@@ -166,3 +166,27 @@ int main() {
     cout << endl << "The sum of your numbers is " << sum << endl;
     return 0;
 }
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main() {
+  double x, x2, sinus = 0, summand;
+  int m = 2;
+  x = -3.1456;
+  x2 = x * x;
+  summand = x;
+  while(abs(summand) > 1.E-7)
+  {
+    sinus += summand;
+    summand = -summand * x2 / (m * (m+1));
+    m += 2;
+  }
+  cout.precision(12);
+  cout.fixed;
+  cout << "Taylor series for sin(" << x << ") is " << sinus << endl;
+  cout.precision(12);
+  cout.fixed;
+  cout << "sin(" << x << ") = " << sin(x) << endl;
+  return 0;
+}
